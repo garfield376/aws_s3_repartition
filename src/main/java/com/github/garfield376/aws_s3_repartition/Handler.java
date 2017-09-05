@@ -18,7 +18,7 @@ public class Handler
 	public Handler() {
 		s3 = AmazonS3ClientBuilder
 		          .standard()
-		          .withRegion(System.getenv("bucket_region"))  //"bucket_region" is one environment key set at Lambda runtime
+		          .withRegion(System.getenv("src_bucket_region"))  //"bucket_region" is one environment key set at Lambda runtime
 		          .build();
 
 
